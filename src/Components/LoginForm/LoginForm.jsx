@@ -29,6 +29,7 @@ export default function LogIn({ setUser }) {
 
 	return (
 		<div>
+			<h3>Login</h3>
 			<div className='form-container' onSubmit={handleSubmit}>
 				<form autoComplete='off'>
 					<label>Email</label>
