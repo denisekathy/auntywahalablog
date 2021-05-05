@@ -23,7 +23,7 @@ function PostDetailPage(props) {
             ) :
                 (
                    
-<AuthPage setUser={setUser} />
+<AuthPage setUser={setUser} user={user}/>
                     
                     
                 )
