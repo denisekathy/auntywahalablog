@@ -8,6 +8,7 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 //Or can I create a comments-api but then idk how to change it if the category changes
 router.get('/', postsCtrl.index)
 router.post('/', postsCtrl.create);
+router.delete('/:id', postsCtrl.delete);
 
 
 module.exports = router;

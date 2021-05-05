@@ -4,7 +4,7 @@ module.exports = {
 	index,
 	create,
 	update,
-    delete: deleteOne
+   
 };
 
 async function index(req, res) {
@@ -21,5 +21,3 @@ async function update(req, res) {
 	
 }
 
-async function deleteOne(req, res) {
-}

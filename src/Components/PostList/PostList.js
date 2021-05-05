@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-function PostList({ post }) {
+function PostList({ post, handleDeletePost }) {
 	return (
 		<div className='panel panel-default'>
 			<div className='panel-heading'>
@@ -20,7 +20,12 @@ function PostList({ post }) {
 				>
 					DETAILS
 				</Link>
-				
+			
+					<button className='btn btn-xs btn-danger margin-left-10'
+                    onClick={() => handleDeletePost(post._id)}>
+                                DELETE
+                                </button>
+			
 				 
 			</div>
 		</div>
