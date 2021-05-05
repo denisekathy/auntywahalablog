@@ -20,6 +20,15 @@ function PostList({ post, handleDeletePost }) {
 				>
 					DETAILS
 				</Link>
+                <Link
+					className='btn btn-xs btn-warning'
+					to={{
+						pathname: '/edit',
+						state: { post },
+					}}
+				>
+					EDIT
+				</Link>
 			
 					<button className='btn btn-xs btn-danger margin-left-10'
                     onClick={() => handleDeletePost(post._id)}>

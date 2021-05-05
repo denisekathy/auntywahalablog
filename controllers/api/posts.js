@@ -4,6 +4,7 @@ const Post = require('../../models/post');
 module.exports = {
 	index,
 	create,
+	update,
 	delete: deleteOne,
 };
 
@@ -18,6 +19,15 @@ async function create(req, res) {
 	console.log("This is the", req.body)
 	console.log("this is the post", post)
 	res.status(201).json(post);
+}
+
+async function update(req, res) {
+	const updatedPost = await Post.findByIdAndUpdate(
+		req.params.id,
+		req.body,
+		{ new: true }
+	);
+	res.status(200).json(updatedPost);
 }
 
 async function deleteOne(req, res) {

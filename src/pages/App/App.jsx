@@ -8,6 +8,7 @@ import NavBar from '../../Components/NavBar/NavBar';
 import NewPostPage from '../../pages/NewPostPage/NewPostPage'
 import Home from '../Home/Home'
 import PostDetailPage from '../../pages/PostDetailPage/PostDetailPage'
+import EditPostPage from '../../pages/EditPostPage/EditPostPage'
 
 
 
@@ -44,6 +45,15 @@ async function handleAddPost(newPostData) {
 	setPosts([...posts, newPost]);
 }
 
+async function handleUpdatePost(updatedPostData) {
+	const updatedPost= await postAPI.update(updatedPostData);
+
+	const newPostsArray = posts.map(post => {
+		return post._id === updatedPost._id ? updatedPost : post;
+	});
+	setPosts(newPostsArray);
+}
+
 async function handleDeletePost(id) {
 	console.log(id);
 	await postAPI.deleteOne(id);
@@ -70,6 +80,9 @@ async function handleAddComment(newCommentData) {
 
 			<Route exact path='/details'>
 					<PostDetailPage handleAddComment={handleAddComment} />
+				</Route>
+				<Route exact path='/edit'>
+					<EditPostPage handleUpdatePost={handleUpdatePost} />
 				</Route>
 			</>
 			
