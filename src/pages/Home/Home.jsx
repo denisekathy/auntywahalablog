@@ -14,6 +14,7 @@ function HomePage(props, handleDeletePost) {
 					handleDeletePost={props.handleDeletePost}
           />
 				))}
+				
 			</div>
 		</>
 	);

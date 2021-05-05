@@ -16,7 +16,7 @@ import EditPostPage from '../../pages/EditPostPage/EditPostPage'
 
 import './App.css';
 
-import UserLogOut from '../../Components/UserLogOut/UserLogOut';
+
 import PostDetails from '../../Components/PostDetails/PostDetails';
 
 export default function App(props) {
@@ -69,6 +69,7 @@ async function handleAddComment(newCommentData) {
 			<>
 			
 			<NavBar user={user} setUser={setUser} />
+			<Switch>
 			<Route exact path='/'>
 				<Home posts={posts} handleDeletePost={handleDeletePost} />
 	
@@ -83,7 +84,9 @@ async function handleAddComment(newCommentData) {
 				</Route>
 				<Route exact path='/edit'>
 					<EditPostPage handleUpdatePost={handleUpdatePost} />
+					<Redirect />
 				</Route>
+				</Switch>
 			</>
 			
 		
