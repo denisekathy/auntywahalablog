@@ -4,19 +4,17 @@ export default function CommentBox() {
   return (
     <>
       <h1>Leave a Comment</h1>
-      <form>
-        <div>
-          <textarea
-            name="textarea"
-            id="textarea"
-            cols="50"
-            rows="10"
-            placeholder="Comment Here..."
-          ></textarea>
-        </div>
-        <div>
-          <button type="submit" className="btn">
-            Submit Comment
+      <form action="/school/accidentalHBCU/{{post._id}}/comments" method="post">
+        <textarea
+          class="form-control"
+          name="content"
+          col="100"
+          rows="10"
+          placeholder="Comment Here..."
+        ></textarea>
+        <div class="text-right">
+          <button type="submit" class="btn btn-primary">
+            Submit
           </button>
         </div>
       </form>

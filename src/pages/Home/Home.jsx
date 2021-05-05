@@ -1,8 +1,19 @@
 import React from 'react';
+import PostList from "../../Components/PostList/PostList"
 
 
-export default function HomePage(){
-	return(
-		<h1>Home </h1>
+function HomePage(props) {
+	return (
+		<>
+			<h1>All Posts</h1>
+			<div >
+				{props.posts.map(post => (
+					<PostList post={post} key={post._id}
+          handleDeletePost={props.handleDeletePost} />
+				))}
+			</div>
+		</>
 	);
 }
+
+export default HomePage;
