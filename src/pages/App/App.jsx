@@ -7,6 +7,7 @@ import * as postAPI from '../../utilities/posts-api'
 import NavBar from '../../Components/NavBar/NavBar';
 import NewPostPage from '../../pages/NewPostPage/NewPostPage'
 import Home from '../Home/Home'
+import PostDetailPage from '../../pages/PostDetailPage/PostDetailPage'
 
 
 
@@ -15,6 +16,7 @@ import Home from '../Home/Home'
 import './App.css';
 
 import UserLogOut from '../../Components/UserLogOut/UserLogOut';
+import PostDetails from '../../Components/PostDetails/PostDetails';
 
 export default function App(props) {
 const [user, setUser] = useState(getUser());
@@ -59,7 +61,10 @@ async function handleDeletePost(id) {
 			<NewPostPage
 			handleAddPost={handleAddPost} />
 			</Route>
-			
+
+			<Route exact path='/details'>
+					<PostDetailPage />
+				</Route>
 			</>
 			
 		
