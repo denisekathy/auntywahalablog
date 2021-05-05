@@ -5,6 +5,7 @@ export default function NewPostPage(props) {
 	const [formData, setFormData] = useState({
 		title: "",
 		content: "",
+    createdAt: 'created_at'
 	
 	});
 
