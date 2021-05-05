@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function PostDetails({ post }) {
+
+function PostDetails({ post, comment }) {
 	return (
 		<div className='panel panel-default'>
 			<div className='panel-heading'>
@@ -11,6 +12,8 @@ function PostDetails({ post }) {
 				<dl>
 					<dt>Content</dt>
 					<dd>{post.content}</dd>
+                    <dt>Comments</dt>
+                    <dd>{comment}</dd>
 				</dl>
 			</div>
 			<div className='panel-footer'>

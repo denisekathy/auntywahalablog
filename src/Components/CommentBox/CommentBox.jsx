@@ -1,6 +1,6 @@
 import react, {useRef, useState } from "react";
 
-export default function CommentBox(props, handleAddComment) {
+export default function CommentBox(props) {
     const[comments, setComments] = useState();
     const [commentData, setCommentData] = useState({
 		content: '',
@@ -8,6 +8,11 @@ export default function CommentBox(props, handleAddComment) {
 	});
 
 	const formRef = useRef();
+
+    const handleSubmit = e => {
+		e.preventDefault();
+		props.handleAddComment(commentData);
+	};
 
 	
 
@@ -21,7 +26,7 @@ export default function CommentBox(props, handleAddComment) {
     <>
    
       <h1>Leave a Comment</h1>
-      <form action='/details'autoComplete='off' ref={formRef} >
+      <form action='/details'autoComplete='off' ref={formRef}  onSubmit={handleSubmit} >
         <textarea
           class="form-control"
           name="content"
