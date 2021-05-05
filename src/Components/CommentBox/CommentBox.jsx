@@ -1,10 +1,11 @@
 import react from "react";
 
-export default function CommentBox() {
+export default function CommentBox(prop) {
   return (
     <>
+   
       <h1>Leave a Comment</h1>
-      <form action="/school/accidentalHBCU/{{post._id}}/comments" method="post">
+      <form action="/posts/{{post._id}}/comments" method="post">
         <textarea
           class="form-control"
           name="content"
