@@ -3,7 +3,7 @@ import { Redirect, Route, Switch, Link, useHistory } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
 import * as postAPI from '../../utilities/posts-api'
-
+import * as commentAPI from '../../utilities/comments-api'
 import NavBar from '../../Components/NavBar/NavBar';
 import NewPostPage from '../../pages/NewPostPage/NewPostPage'
 import Home from '../Home/Home'
@@ -21,6 +21,7 @@ import PostDetails from '../../Components/PostDetails/PostDetails';
 export default function App(props) {
 const [user, setUser] = useState(getUser());
 const[posts, setPosts] = useState([]);
+const[comments, setComments] = useState();
 const history = useHistory();
 
 	useEffect(() => {
@@ -48,6 +49,11 @@ async function handleDeletePost(id) {
 	await postAPI.deleteOne(id);
 	setPosts(posts.filter(post => post._id !== id));
 }
+
+async function handleAddComment(newCommentData) {
+	const newComment = await commentAPI.create(newCommentData);
+	setComments([...comments, newComment]);
+}
 	return (
 		
 			<>
@@ -63,7 +69,7 @@ async function handleDeletePost(id) {
 			</Route>
 
 			<Route exact path='/details'>
-					<PostDetailPage />
+					<PostDetailPage handleAddComment={handleAddComment} />
 				</Route>
 			</>
 			

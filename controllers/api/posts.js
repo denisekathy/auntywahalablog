@@ -3,8 +3,7 @@ const Post = require('../../models/post');
 module.exports = {
 	index,
 	create,
-	update,
-    delete: deleteOne
+	
 };
 
 async function index(req, res) {
@@ -20,9 +19,3 @@ async function create(req, res) {
 	res.status(201).json(post);
 }
 
-async function update(req, res) {
-	
-}
-
-async function deleteOne(req, res) {
-}

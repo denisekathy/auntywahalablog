@@ -18,7 +18,7 @@ function PostDetailPage(props) {
 			<h1>Post Details</h1>
 			<PostDetails key={post._id} post={post} />
             {user ? (
-            <CommentBox  user={user}/>
+            <CommentBox  user={user} />
             ) :
                 (
                     <AuthPage setUser={setUser} />

@@ -9,7 +9,7 @@ function HomePage(props) {
 			<div >
 				{props.posts.map(post => (
 					<PostList post={post} key={post._id}
-          handleDeletePost={props.handleDeletePost} />
+          />
 				))}
 			</div>
 		</>

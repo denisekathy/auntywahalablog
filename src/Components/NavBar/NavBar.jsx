@@ -1,6 +1,8 @@
-import React from "react";
+
 import { Link, Route, Switch } from "react-router-dom";
+import UserLogOut from '../UserLogOut/UserLogOut'
 import * as userService from "../../utilities/users-service";
+import { logOut } from '../../utilities/users-service'
 
 export default function NavBar({ user, setUser }) {
   function handleLogOut() {
@@ -20,9 +22,10 @@ export default function NavBar({ user, setUser }) {
 		&nbsp; | &nbsp;
         <Link to="/posts/new">New Post</Link>
         &nbsp; | &nbsp;
-    
-        {/* <span>Welcome,{user.name}</span> */}
+    {/* user.name is not working...need to fix and the ability to log out  */}
+        <span>Welcome,</span> 
         &nbsp;&nbsp;
+		{/* <UserLogOut user={user} setUser={setUser} /> */}
         <Link to="" onClick={handleLogOut}>
           Log Out
         </Link>

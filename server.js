@@ -29,7 +29,8 @@ app.listen(port, function () {
 //api routes will go here
 // app.use('/api/users', require('./routes/api/users'))
 app.use('/api/users', require('./routes/api/users'));
-app.use('/api/posts', require('./routes/api/posts'))
+app.use('/api/posts', require('./routes/api/posts'));
+app.use('/api/comments', require('./routes/api/comments'))
 
 // The following "catch all" route (note the *) is necessary
 app.get('/*', function (req, res) {
