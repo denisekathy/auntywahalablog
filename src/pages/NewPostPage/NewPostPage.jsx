@@ -1,4 +1,5 @@
 import React, {  useState, useRef, useEffect } from 'react';
+import './NewPostPage.css'
 
 export default function NewPostPage(props, user) {
 	const [invalidForm, setValidForm] = useState(true);
@@ -32,10 +33,16 @@ export default function NewPostPage(props, user) {
  
   return (
     <>
+    <br/>
     <h1>Create New Post</h1>
-    <form autoComplete='off' ref={formRef} onSubmit={handleSubmit}>
-      <div className='form-group'>
-        <label>Title</label>
+    <br/>
+    
+   
+    <br/>
+    <form className="form" autoComplete='off' ref={formRef} onSubmit={handleSubmit}>
+  
+      <div>
+        <label className="label">Title</label>
         <input
           className='form-control'
           name='title'
@@ -44,11 +51,12 @@ export default function NewPostPage(props, user) {
           onChange={handleChange}
           required
         />
+     
       </div>
       <br/>
-    
-      <div className='form-group'>
-        <label>Content</label>
+   
+      <div >
+        <label  className="label">Content</label>
         <textarea
           className='form-control'
           name='content'
@@ -59,11 +67,12 @@ export default function NewPostPage(props, user) {
           onChange={handleChange}
           required
         />
+     
       </div>
       <br/>
       
       
-      <button type='submit' className='btn btn-success' disabled={invalidForm} >
+      <button type='submit' className='btn btnPost btn-lg' disabled={invalidForm} >
       Create Post
       </button>
     </form>
