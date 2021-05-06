@@ -15,7 +15,9 @@ function PostDetailPage(props) {
 
 	return (
 		<>
+        <br/>
 			<h1>Post Details</h1>
+            <br/>
 			<PostDetails key={post._id} post={post} />
         
 		</>

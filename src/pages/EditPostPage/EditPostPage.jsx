@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import './EditPostPage.css'
 
 export default function EditPostPage(props) {
 	const location = useLocation();
@@ -32,7 +33,7 @@ export default function EditPostPage(props) {
 			<h1>Edit Post</h1>
 			<form ref={formRef} autoComplete='off' onSubmit={handleSubmit}>
 				<div className='form-group'>
-					<label>Title</label>
+					<label className="label">Title</label>
 					<input
 						className='form-control'
 						name='name'
@@ -42,7 +43,7 @@ export default function EditPostPage(props) {
 					/>
 				</div>
 				<div className='form-group'>
-					<label>Content</label>
+					<label className="label">Content</label>
 					<textarea
 						className='form-control'
                         name='content'
@@ -58,7 +59,7 @@ export default function EditPostPage(props) {
 		
 				<button
 					type='submit'
-					className='btn btn-xs'
+					className='btn btnSave btn-xs'
 					disabled={invalidForm}
 				>
 					SAVE POST

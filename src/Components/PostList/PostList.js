@@ -7,7 +7,7 @@ function PostList({ post, handleDeletePost }) {
         <div className="card bg-light">
 		<div className="card-deck">
 			<div className='card-body customBody'>
-				<h3 className='card-title'>{post.title}</h3>
+				<h3 className='card-title'>✍🏾 {post.title}</h3>
 				
 
 			</div>
