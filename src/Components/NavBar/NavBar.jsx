@@ -4,6 +4,7 @@ import * as userService from "../../utilities/users-service";
 import './NavBar.css'
 
 
+
 export default function NavBar({ user, setUser }) {
   function handleLogOut() {
     // Delegate to the users-service
@@ -14,9 +15,10 @@ export default function NavBar({ user, setUser }) {
  
   return (
 	  <>
-	  <header>AUNTY
-		   WAHALA</header>
-    <nav className="navbar navbar-center bg-success navbar-light">
+	  <header>
+		
+	  </header>
+    <nav className="navbar navbar-center  navbar-light customNav">
 		
       <Link className="link" to="/">Home</Link>
       &nbsp; | &nbsp;
