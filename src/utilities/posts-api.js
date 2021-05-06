@@ -8,10 +8,11 @@ export function getAll() {
 }
 
 export function create(post) {
+   const token = getToken();
 	return fetch(BASE_URL, {
 		method: 'POST',
 		headers: { 'content-type': 'application/json' ,
-        // 'Authorization':`Bearer ${token}`,
+        'Authorization':`Bearer ${token}`,
     },
 		body: JSON.stringify(post),
 	}).then(res => res.json());

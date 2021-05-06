@@ -7,7 +7,7 @@ function PostList({ post, handleDeletePost }) {
 		<div className='panel panel-default'>
 			<div className='panel-heading'>
 				<h3 className='panel-title'>{post.title}</h3>
-				<h3 className='panel-content'>{post.content}</h3>
+				
 
 			</div>
 			<div className='panel-footer PostList-action-panel'>

@@ -6,7 +6,7 @@ function HomePage(props, handleDeletePost) {
 	return (
 		<>
 			<h1>All Posts</h1>
-			<div >
+			<div>
 				{props.posts.map(post => (
 					<PostList 
 					post={post} 

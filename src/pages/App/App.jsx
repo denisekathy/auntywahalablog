@@ -73,19 +73,19 @@ async function handleAddComment(newCommentData) {
 	<NavBar user={user} setUser={setUser} />
 		
 	<Route exact path='/'>
-		<Home posts={posts} handleDeletePost={handleDeletePost} />
+		<Home posts={posts} handleDeletePost={handleDeletePost} user={user}  />
 
 	</Route>
 	<Route exact path='/posts/new'>
 	<NewPostPage
-	handleAddPost={handleAddPost} />
+	handleAddPost={handleAddPost} user={user}  />
 	</Route>
 
 	<Route exact path='/details'>
-			<PostDetailPage handleAddComment={handleAddComment} />
+			<PostDetailPage handleAddComment={handleAddComment} user={user}  />
 		</Route>
 		<Route exact path='/edit'>
-			<EditPostPage handleUpdatePost={handleUpdatePost} />
+			<EditPostPage handleUpdatePost={handleUpdatePost}user={user}  />
 			
 		</Route>
 		</>

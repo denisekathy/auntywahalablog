@@ -1,8 +1,9 @@
 import React, {  useState, useRef, useEffect } from 'react';
 
-export default function NewPostPage(props) {
+export default function NewPostPage(props, user) {
 	const [invalidForm, setValidForm] = useState(true);
 	const [formData, setFormData] = useState({
+    userId: user._id,
 		title: "",
 		content: "",
     createdAt: 'created_at'
@@ -45,6 +46,7 @@ export default function NewPostPage(props) {
         />
       </div>
       <br/>
+    
       <div className='form-group'>
         <label>Content</label>
         <textarea

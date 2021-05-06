@@ -15,7 +15,6 @@ async function index(req, res) {
 async function create(req, res) {
 
 	req.body.user = req.user;
-
 	const post = await Post.create(req.body);
 	console.log("This is the", req.body)
 	console.log("this is the post", post)
