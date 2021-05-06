@@ -18,7 +18,7 @@ export default function NavBar({ user, setUser }) {
 	  <header>
 		
 	  </header>
-    <nav className="navbar navbar-center  navbar-light customNav">
+    <nav className="navbar navbar-center bg-dark navbar-light">
 		
       <Link className="link" to="/">Home</Link>
       &nbsp; | &nbsp;

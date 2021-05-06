@@ -19,6 +19,8 @@ background-repeat: no-repeat;
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     color: azure;
+
+    
     
 
    
@@ -26,13 +28,28 @@ background-repeat: no-repeat;
 }
 
 
-a.link{
+a.link, a{
     text-decoration: none;
+    color: azure;
+  
+  
+    
+   
 }
 
-.customNav{
-    background:orange;
+a.link:hover, a:hover{
+    content:'';
+    color:#61b15a;
+    text-decoration:none;
+    height:-5px;
+  
+   
 }
+
+a.link::after a::after{
+    
+}
+
 
 
 
