@@ -66,28 +66,36 @@ async function handleAddComment(newCommentData) {
 }
 	return (
 		
-			<>
 			
-			<NavBar user={user} setUser={setUser} />
+			<main className="App">
+				{user ? (
+					<>
+	<NavBar user={user} setUser={setUser} />
 		
-			<Route exact path='/'>
-				<Home posts={posts} handleDeletePost={handleDeletePost} />
-	
-			</Route>
-			<Route exact path='/posts/new'>
-			<NewPostPage
-			handleAddPost={handleAddPost} />
-			</Route>
+	<Route exact path='/'>
+		<Home posts={posts} handleDeletePost={handleDeletePost} />
 
-			<Route exact path='/details'>
-					<PostDetailPage handleAddComment={handleAddComment} />
-				</Route>
-				<Route exact path='/edit'>
-					<EditPostPage handleUpdatePost={handleUpdatePost} />
-					
-				</Route>
+	</Route>
+	<Route exact path='/posts/new'>
+	<NewPostPage
+	handleAddPost={handleAddPost} />
+	</Route>
+
+	<Route exact path='/details'>
+			<PostDetailPage handleAddComment={handleAddComment} />
+		</Route>
+		<Route exact path='/edit'>
+			<EditPostPage handleUpdatePost={handleUpdatePost} />
 			
-			</>
+		</Route>
+		</>
+			
+				): (
+					<AuthPage setUser={setUser} />
+				)}
+				
+		
+				</main>
 			
 		
 			

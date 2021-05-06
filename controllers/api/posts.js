@@ -13,7 +13,8 @@ async function index(req, res) {
 	res.status(200).json(posts);
 }
 async function create(req, res) {
-	const {title, content} = req.body;
+
+	req.body.user = req.user;
 
 	const post = await Post.create(req.body);
 	console.log("This is the", req.body)
