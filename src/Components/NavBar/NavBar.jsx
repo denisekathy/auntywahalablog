@@ -13,19 +13,29 @@ export default function NavBar({ user, setUser }) {
   }
  
   return (
-    <nav className="nav">
-      <Link to="/">Home</Link>
+	  <>
+	  <header>AUNTY
+		   WAHALA</header>
+    <nav className="navbar navbar-center bg-success navbar-light">
+		
+      <Link className="link" to="/">Home</Link>
       &nbsp; | &nbsp;
       <Link to="/posts/new">New Post</Link>
       &nbsp; | &nbsp;
-      {user && <span>Welcome,{user.name}</span>}
+      {user && <span>Welcome, {user.name}</span>}
       &nbsp; | &nbsp;
+	  <Link to="/about">About Us</Link>
+	  &nbsp; | &nbsp;
 	  {user &&
 		<Link to="" onClick={handleLogOut}>
         Log Out
       </Link>
 	  }
+	   
+	
+     
       
     </nav>
+	</>
   );
 }
