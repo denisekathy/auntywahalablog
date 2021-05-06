@@ -6,6 +6,7 @@ function HomePage(props) {
 	return (
 		<>
 			<h1>All Posts</h1>
+	
 			<div>
 				{props.posts.map(post => (
 					props.user._id === post.user ? (
@@ -21,7 +22,9 @@ function HomePage(props) {
 					
 				))}
 				
+			
 			</div>
+
 		</>
 	);
 }
