@@ -53,6 +53,7 @@ https://auntywahala.herokuapp.com/
 - Allow readers to log in and add comments to articles/posts, edit or delete their comments as well as comment on other readers comments
 - Style the home page to give a more blog-like feel
 - Create a section search bar
+- Make the website more responsive 
 
 
 

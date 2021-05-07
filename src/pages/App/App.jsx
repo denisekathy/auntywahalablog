@@ -38,7 +38,6 @@ export default function App(props) {
   }
 
   async function handleDeletePost(id) {
-    console.log(id);
     await postAPI.deleteOne(id);
     setPosts(posts.filter((post) => post._id !== id));
   }
