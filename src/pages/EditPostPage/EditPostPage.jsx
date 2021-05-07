@@ -32,7 +32,8 @@ export default function EditPostPage(props) {
 	return (
 		<>
 			<h1>Edit Post</h1>
-			<form ref={formRef} autoComplete='off' onSubmit={handleSubmit}>
+            <br/>
+			<form className="text-center"ref={formRef} autoComplete='off' onSubmit={handleSubmit}>
 				<div className='form-group'>
 					<label className="label">Title</label>
 					<input

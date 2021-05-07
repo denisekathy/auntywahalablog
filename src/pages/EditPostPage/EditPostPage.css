@@ -34,7 +34,11 @@ label.label {
     color:white;
     /* display:inline-block; */
     /* align-items: center; */
-    margin: 0 auto;
+    /* display:inline;
+    align-items: center; */
+ /* float:right; */
+ /* justify-content: center; */
+  
   
     
 }
