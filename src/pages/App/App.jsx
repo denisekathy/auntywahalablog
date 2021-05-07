@@ -90,9 +90,9 @@ async function handleAddComment(newCommentData) {
 			
 		</Route>
 		<Route exact path='/about'>
-			<About />
-			
+			<About />	
 		</Route>
+		<Redirect to='/' />
 		</>
 			
 				): (
