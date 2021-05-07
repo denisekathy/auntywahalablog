@@ -19,9 +19,11 @@ just met aunty, and parents will call female elders aunty also. So a friend of o
 Currently, this site allows a user to sign up, log in and create a post/ suggestion. At this time they are only able to view, edit or delete posts made by them.  
 
 ## This is just the beginning
-
 <br>
-Check in periodically to watch this blog progress into final form. https://trello.com/b/b7Tkh2fX/aw-blog <br>
+
+### Planning
+<br>
+Check in periodically to watch this blog progress into final form as we plan. https://trello.com/b/b7Tkh2fX/aw-blog <br>
 
 
 <br>
