@@ -9,6 +9,7 @@ import NewPostPage from '../../pages/NewPostPage/NewPostPage'
 import Home from '../Home/Home'
 import PostDetailPage from '../../pages/PostDetailPage/PostDetailPage'
 import EditPostPage from '../../pages/EditPostPage/EditPostPage'
+import About from '../../pages/About/About'
 
 
 
@@ -32,13 +33,13 @@ const history = useHistory();
 	}, [posts, history]);
 
 
-useEffect(() => {
-	async function getPosts() {
-		const posts = await postAPI.getAll();
-		setPosts(posts);
-	}
-	getPosts();
-}, []);
+// useEffect(() => {
+// 	async function getPosts() {
+// 		const posts = await postAPI.getAll();
+// 		setPosts(posts);
+// 	}
+// 	getPosts();
+// }, []);
 
 async function handleAddPost(newPostData) {
 	const newPost = await postAPI.create(newPostData);
@@ -73,7 +74,7 @@ async function handleAddComment(newCommentData) {
 	<NavBar user={user} setUser={setUser} />
 		
 	<Route exact path='/'>
-		<Home posts={posts} handleDeletePost={handleDeletePost} user={user}  />
+		<Home posts={posts} handleDeletePost={handleDeletePost} user={user} setPosts={setPosts} />
 
 	</Route>
 	<Route exact path='/posts/new'>
@@ -86,6 +87,10 @@ async function handleAddComment(newCommentData) {
 		</Route>
 		<Route exact path='/edit'>
 			<EditPostPage handleUpdatePost={handleUpdatePost}user={user}  />
+			
+		</Route>
+		<Route exact path='/about'>
+			<About />
 			
 		</Route>
 		</>

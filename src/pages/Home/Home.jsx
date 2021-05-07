@@ -1,8 +1,17 @@
-import React from 'react';
-import PostList from "../../Components/PostList/PostList"
+import { useEffect } from 'react';
+import PostList from "../../Components/PostList/PostList";
+import * as postAPI from '../../utilities/posts-api';
 
 
 function HomePage(props) {
+	useEffect(() => {
+		async function getPosts() {
+			const posts = await postAPI.getAll();
+			props.setPosts(posts);
+		}
+		getPosts();
+	}, []);
+
 	return (
 		<>
 		<br/>

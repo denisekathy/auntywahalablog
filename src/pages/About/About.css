@@ -1,0 +1,39 @@
+img{
+    text-align: center;
+}
+  
+.lines{
+    text-align: center;
+    font-size: 1.5rem;
+}
+  .about-us{
+      padding:150px;
+      text-align:center;
+      font-family: Oswald, sans-serif;
+      font-size: 2rem;
+     
+
+      
+  }
+ 
+  .why{
+    padding:10px;
+    text-align:center;
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+    color: cornsilk;
+
+
+  }
+
+  .column{
+    text-align: center;
+    font-size: 1.5rem;
+    
+  }
+.arch::after {
+    content: "";
+    display: table;
+    clear:both;
+
+}
