@@ -1,49 +1,31 @@
-body{
-    background: url('../../images/augustine-wong-li0iC0rjvvg-unsplash.jpg');
-    background-size:cover;
-background-repeat: no-repeat;
-height: 20rem;
-font-family: Lato, sans-serif;
+body {
+  background: url("../../images/augustine-wong-li0iC0rjvvg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  font-family: Lato, sans-serif;
 }
 
-
-h1{
-    text-align:center;
-    font-size: 3rem;
-   
+h1 {
+  text-align: center;
+  font-size: 3rem;
 }
-
 
 .form-group {
-padding: 0 150px 0 150px;
-text-align: center;
-
-
+  padding: 0 150px 0 150px;
+  text-align: center;
 }
-
 
 label.label {
-    font-size: 2rem;
-   
-   
-   
+  font-size: 2rem;
 }
 
-.btnSave{
-    background-color:#61b15a;
-    color:white;
-    /* display:inline-block; */
-    /* align-items: center; */
-    /* display:inline;
-    align-items: center; */
- /* float:right; */
- /* justify-content: center; */
-  
-  
-    
+.btnSave {
+  background-color: #61b15a;
+  color: white;
 }
 
-.btnCancel{
-    background-color: grey;
-    float: right;;
+.btnCancel {
+  background-color: grey;
+  float: right;
 }

@@ -1,32 +1,33 @@
-import react, {useRef, useState } from "react";
+import react, { useRef, useState } from "react";
 
 export default function CommentBox(props) {
-    const[comments, setComments] = useState();
-    const [commentData, setCommentData] = useState({
-		content: '',
+  const [comments, setComments] = useState();
+  const [commentData, setCommentData] = useState({
+    content: "",
+  });
 
-	});
+  const formRef = useRef();
 
-	const formRef = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.handleAddComment(commentData);
+  };
 
-    const handleSubmit = e => {
-		e.preventDefault();
-		props.handleAddComment(commentData);
-	};
-
-	
-
-	const handleChange = e => {
-		setCommentData({
-			...commentData,
-			[e.target.name]: e.target.value,
-		});
-	};
+  const handleChange = (e) => {
+    setCommentData({
+      ...commentData,
+      [e.target.name]: e.target.value,
+    });
+  };
   return (
     <>
-   
       <h1>Leave a Comment</h1>
-      <form action='/details'autoComplete='off' ref={formRef}  onSubmit={handleSubmit} >
+      <form
+        action="/details"
+        autoComplete="off"
+        ref={formRef}
+        onSubmit={handleSubmit}
+      >
         <textarea
           class="form-control"
           name="content"

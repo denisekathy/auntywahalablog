@@ -1,18 +1,17 @@
-.authpage{
-    text-align: center;
-    font-family: Oswald, sans-serif;
-    font-size: 2rem;
-    background-color: light whitesmoke;
-    border-radius: 20px;
+.authpage {
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+  background-color: light whitesmoke;
+  border-radius: 20px;
 
-    margin: 100px 400px 100px 400px;
+  margin: 100px 400px 100px 400px;
 }
 
-input{
-border: green;
+input {
+  border: green;
 }
 
-.btn{
-    text-align: center;
+.btn {
+  text-align: center;
 }
-

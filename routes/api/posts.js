@@ -1,16 +1,12 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const postsCtrl = require('../../controllers/api/posts');
-// require the authorization middleware function
-const ensureLoggedIn = require('../../config/ensureLoggedIn');
+const postsCtrl = require("../../controllers/api/posts");
 
-//Do I need to create a route pre-pended by /school? to be required in server.js
-//Or can I create a comments-api but then idk how to change it if the category changes
-router.get('/', postsCtrl.index)
-router.post('/', postsCtrl.create);
-router.put('/:id', postsCtrl.update)
-router.delete('/:id', postsCtrl.delete);
+const ensureLoggedIn = require("../../config/ensureLoggedIn");
 
-
+router.get("/", postsCtrl.index);
+router.post("/", postsCtrl.create);
+router.put("/:id", postsCtrl.update);
+router.delete("/:id", postsCtrl.delete);
 
 module.exports = router;

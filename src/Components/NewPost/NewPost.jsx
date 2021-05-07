@@ -1,11 +1,9 @@
-import react from 'react'
+import react from "react";
 
-export default function NewPost(){
-
-    return(
-        <>
-
-		<h1>NewPost Compnoet</h1>
-            </>
-    )
+export default function NewPost() {
+  return (
+    <>
+      <h1>NewPost Component</h1>
+    </>
+  );
 }
