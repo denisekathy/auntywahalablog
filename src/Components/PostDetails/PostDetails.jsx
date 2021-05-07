@@ -1,21 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import "./PostDetails.css"
 
 function PostDetails({ post, comment }) {
 	return (
-		<div className='panel panel-default'>
-			<div className='panel-heading'>
-				<h3 className='postDetailsTitle'>{post.title}</h3>
+		<div className='default'>
+			<div>
+                <h2>Title:</h2>
+                <br/>
+				<h2>{post.title}</h2>
 			</div>
+            <br/>
 			<div className='panel-body'>
-				<dl>
-					<dt>Content</dt>
-					<dd>{post.content}</dd>
+				
+					<h2>Content:</h2>
+                    <br/>
+					<h2>{post.content}</h2>
                     
-				</dl>
+	
 			</div>
-			<div className='panel-footer'>
+            <br/>
+            <br/>
+			<div className='btn btn-success'>
 				<Link to='/'>RETURN TO LIST</Link>
 			</div>
 		</div>
