@@ -1,5 +1,6 @@
 img{
     text-align: center;
+    
 }
   
 .lines{
@@ -36,4 +37,10 @@ img{
     display: table;
     clear:both;
 
+}
+
+.title{
+    
+    text-decoration-line: underline;
+    text-decoration-color:#61b15a;;
 }

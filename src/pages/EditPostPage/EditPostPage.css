@@ -14,7 +14,7 @@ h1{
 }
 
 
-.form {
+.form-group {
 padding: 0 150px 0 150px;
 text-align: center;
 
@@ -32,6 +32,14 @@ label.label {
 .btnSave{
     background-color:#61b15a;
     color:white;
-    display:inline-block;
-    align-items: center;
+    /* display:inline-block; */
+    /* align-items: center; */
+    margin: 0 auto;
+  
+    
+}
+
+.btnCancel{
+    background-color: grey;
+    float: right;;
 }

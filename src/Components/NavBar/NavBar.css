@@ -1,52 +1,26 @@
-
-header{
-   
-    background: url('../../images/Titleimage.png');
-background-size:cover;
-background-repeat: no-repeat;
-    height: 20rem;
-  
-
-
-  
-   
-    
-
-   
+header {
+  background: url("../../images/Titleimage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
 }
 
-.navbar{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    color: azure;
-
-    
-    
-
-   
-   
+.navbar {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: azure;
 }
 
-
-a.link, a{
-    text-decoration: none;
-    color: azure;
-  
-  
-    
-   
+a {
+  text-decoration: none;
+  color: azure;
+  text-align: center;
 }
 
-a.link:hover, a:hover{
-    content:'';
-    color:#61b15a;
-    text-decoration:none;
-    height:-5px;
-  
-   
+a.link:hover,
+a:hover {
+  content: "";
+  color: #61b15a;
+  text-decoration: none;
+  height: -5px;
 }
-
-
-
-
-

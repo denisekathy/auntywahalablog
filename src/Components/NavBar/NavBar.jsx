@@ -20,7 +20,7 @@ export default function NavBar({ user, setUser }) {
 	  </header>
     <nav className="navbar navbar-center bg-dark navbar-light">
 		
-      <Link className="link" to="/">Home</Link>
+      <Link to="/">Home</Link>
       &nbsp; | &nbsp;
       <Link to="/posts/new">New Post</Link>
       &nbsp; | &nbsp;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './EditPostPage.css'
+import "./EditPostPage.css"
+
 
 export default function EditPostPage(props) {
 	const location = useLocation();
@@ -36,7 +37,7 @@ export default function EditPostPage(props) {
 					<label className="label">Title</label>
 					<input
 						className='form-control'
-						name='name'
+						name='title'
 						value={formData.title}
 						onChange={handleChange}
 						required
@@ -65,7 +66,8 @@ export default function EditPostPage(props) {
 					SAVE POST
 				</button>
 				&nbsp;&nbsp;
-				<Link to='/'>CANCEL</Link>
+                <br/>
+				<Link className="btn btnCancel btn-xs" to='/'>CANCEL</Link>
 			</form>
 		</>
 	);

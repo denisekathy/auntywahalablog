@@ -6,7 +6,7 @@ export default function AboutPage(){
     <>
 <br/>
 <br/> 
-        <h1>Objective</h1>
+        <h1 className="title">Objective</h1>
         <br/>
         <br/> 
         <p class="lines">
@@ -16,7 +16,7 @@ export default function AboutPage(){
             </p>      
             <br/> 
             <br/> 
-            <h1>But Why Would You Call Your Blog Aunty Wahala?</h1>
+            <h1 className="title">But Why Would You Call Your Blog Aunty Wahala?</h1>
             <br />
         <p class="lines">Let’s break it down...<br/><br/>Where we’re from the word “aunty” is used to address older women<br/> as a sign of respect. 
             But to be clear, little kids will call a woman in her<br/> late twenties aunty, teenagers will call older women they 
@@ -26,7 +26,7 @@ export default function AboutPage(){
             even came up with Aunties with no Ozzbands (Husbands)<br/> as a blog name but we will not claim that in the NAMMMMEEEE OF JESUSSS.
             </p><br/><br/>
 
-            <h1>The Architects</h1>
+            <h1 className="title">The Architects</h1>
         <br/>
         <p class="column">
         <img src="https://i.imgur.com/P0gv1wKm.jpg"/><br/><br/> 
