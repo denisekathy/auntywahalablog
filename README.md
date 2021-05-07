@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Aunty Wahala Blog 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+The objective of Aunty Wahala is to provide a space where people from all walks of life can congregate to laugh, commiserate, vent and learn from one another's experiences. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
+But Why Would You Call Your blog Aunty Wahala?<br><br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+<strong>Let’s break it down...</strong><br><br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Where we’re from the word “aunty” is used to address older women as a sign of respect.But to be clear, little kids will call a woman in her late twenties aunty, teenagers will call older women they 
+just met aunty, and parents will call female elders aunty also. So a friend of our mom is our aunty but the lady selling street food is also called aunty. Still with us…? The word "wahala" means trouble or problem in Yoruba but it is commonly used amongst people of the African diaspora.<br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Currently, this site allows a user to sign up, log in and create a post/ suggestion. At this time they are only able to view, edit or delete posts made by them.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## This is just the beginning
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
+Check in periodically to watch this blog progress into final form. https://trello.com/b/b7Tkh2fX/aw-blog <br>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Current Progress
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![All Post Page](src/images/AllPost.png)
+![Create A Post](src/images/CreateAPost.png)
+![Multiple Posts](src/images/MultiplePosts.png)
+![Post Details](src/images/PostDetails.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- MERN Stack (MongoDB/Mongoose, Express, React and Node)
+- Bootstrap
+- CSS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Take a look at the current site:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+https://auntywahala.herokuapp.com/
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Current Next Steps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Create a login admin this only allowed to post blog articles and update token-based authenication features
+- Allow readers to log in and add comments to articles/posts, edit or delete their comments as well as comment on other readers comments
+- Style the home page to give a more blog-like feel
+- Create a section search bar
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Future Uses 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Not interested in making or using a blog? While you monitor our progress, feel free to use this for your own needs such as a bill tracker or job application tracker! Who knows?! You may just come up with the next best idea!
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
