@@ -30,9 +30,11 @@ export default function LogIn({ setUser }) {
 	return (
 		<div>
 			<h3>Login</h3>
+			<br/>
 			<div className='form-container' onSubmit={handleSubmit}>
 				<form autoComplete='off'>
-					<label>Email</label>
+					<label>Email :</label>
+					&nbsp; &nbsp;
 					<input
 						type='text'
 						name='email'
@@ -40,7 +42,10 @@ export default function LogIn({ setUser }) {
 						onChange={handleChange}
 						required
 					/>
-					<label>Password</label>
+					<br/>
+					<br/>
+					<label>Password : </label>
+					&nbsp; 
 					<input
 						type='password'
 						name='password'
@@ -48,7 +53,8 @@ export default function LogIn({ setUser }) {
 						onChange={handleChange}
 						required
 					/>
-					<button type='submit'>LOG IN</button>
+					<br/><br/>
+					<button className="btn btn-success btn-lg"type='submit'>LOG IN</button>
 				</form>
 			</div>
 			<p className='error-message'>&nbsp;{error}</p>
