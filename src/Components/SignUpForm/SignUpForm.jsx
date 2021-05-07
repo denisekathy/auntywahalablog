@@ -83,7 +83,7 @@ export default class SignUpForm extends Component {
 						<label>Password : </label>
 						&nbsp; 
 						<input
-							type='text'
+							type='password'
 							name='password'
 							value={this.state.password}
 							onChange={this.handleChange}
@@ -94,7 +94,7 @@ export default class SignUpForm extends Component {
 						<label>Confirm : </label>
 						&nbsp; &nbsp;
 						<input
-							type='text'
+							type='password'
 							name='confirm'
 							value={this.state.confirm}
 							onChange={this.handleChange}

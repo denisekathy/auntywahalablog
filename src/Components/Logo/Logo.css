@@ -2,5 +2,28 @@
   color: #61b15a; 
   border-radius: 10px;
   font-size: 3rem;
+  width: 40ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+text-align:center;
+  }
 
+  .typing-demo {
+   
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
   }
